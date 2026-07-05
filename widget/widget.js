@@ -70,7 +70,7 @@
     "  </button>",
     "  <section class=\"panel\" id=\"noce-panel\" role=\"dialog\" aria-modal=\"false\" aria-labelledby=\"noce-title\">",
     "    <div class=\"head\">",
-    "      <div class=\"brand\"><span class=\"mk\" aria-hidden=\"true\"></span><div class=\"title\"><strong id=\"noce-title\">Recevez votre devis</strong><span class=\"step-label\">Etape 1 / 4</span></div></div>",
+    "      <div class=\"brand\"><span class=\"mk\" aria-hidden=\"true\"></span><div class=\"title\"><strong id=\"noce-title\">Recevez votre devis</strong><span class=\"step-label\">Étape 1 / 4</span></div></div>",
     "      <button class=\"close\" type=\"button\" aria-label=\"Fermer\">×</button>",
     "    </div>",
     "    <div class=\"progress\" aria-hidden=\"true\"><i></i></div>",
@@ -102,7 +102,7 @@
     "      </div>",
     "      <div class=\"qwrap\" data-step=\"4\">",
     "        <p class=\"qlabel\">Budget indicatif &amp; détails</p>",
-    "        <p class=\"qhint\">Optionnel, ça nous aide à viser juste du premier coup.</p>",
+    "        <p class=\"qhint\">Optionnel, cela nous aide à viser juste du premier coup.</p>",
     "        <div class=\"opts\" data-single=\"budget\" style=\"margin-bottom:12px\">",
     "          <button class=\"opt\" type=\"button\" data-val=\"moins de 5 000 € HT\">&lt; 5 000 € HT</button>",
     "          <button class=\"opt\" type=\"button\" data-val=\"5 000 - 10 000 € HT\">5 000 - 10 000 €</button>",
@@ -212,7 +212,7 @@
       wrap.classList.toggle("active", Number(wrap.getAttribute("data-step")) === step);
     });
     bar.style.width = (step / TOTAL_STEPS * 100) + "%";
-    stepLabel.textContent = "Etape " + step + " / " + TOTAL_STEPS;
+    stepLabel.textContent = "Étape " + step + " / " + TOTAL_STEPS;
     prev.style.visibility = step === 1 ? "hidden" : "visible";
     next.textContent = step === TOTAL_STEPS ? "Voir ma demande" : "Continuer";
     refreshNext();
@@ -329,5 +329,3 @@
     if (launcher.getAttribute("aria-expanded") !== "true") teaser.hidden = false;
   }, 2500);
 })();
-
-/* v2 1f87a57 */
