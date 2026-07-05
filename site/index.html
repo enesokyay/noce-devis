@@ -1,0 +1,1371 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noce Habitat | Modules container 21 m² livrés en France</title>
+  <meta name="description" content="Modules container neufs de 21 m² pour bureau, chantier, studio, commerce ou stockage. 15 configurations, devis rapide sur WhatsApp, livraison partout en France.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ground: #ece9e3;
+      --panel: #f6f4ef;
+      --panel-2: #e3dfd6;
+      --ink: #17191c;
+      --ink-soft: #3c4046;
+      --muted: #6b7078;
+      --line: #d3cec4;
+      --line-strong: #b9b3a6;
+      --corten: #c6491f;
+      --corten-bright: #e1652e;
+      --steel: #556069;
+      --whatsapp: #1fa855;
+      --white: #ffffff;
+      --shadow: 0 1px 0 rgba(0,0,0,.04), 0 18px 46px -24px rgba(20,20,20,.42);
+      --radius: 6px;
+      --maxw: 1180px;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --ground: #121417;
+        --panel: #191c20;
+        --panel-2: #23272c;
+        --ink: #f2efe9;
+        --ink-soft: #c7c3bb;
+        --muted: #8a8f97;
+        --line: #2a2f34;
+        --line-strong: #3a4046;
+        --corten: #e1652e;
+        --corten-bright: #f07b3e;
+        --steel: #7e8a93;
+        --whatsapp: #29c063;
+        --white: #f7f3eb;
+        --shadow: 0 1px 0 rgba(0,0,0,.4), 0 22px 52px -26px rgba(0,0,0,.82);
+      }
+    }
+
+    :root[data-theme="light"] {
+      color-scheme: light;
+      --ground: #ece9e3; --panel: #f6f4ef; --panel-2: #e3dfd6; --ink: #17191c;
+      --ink-soft: #3c4046; --muted: #6b7078; --line: #d3cec4; --line-strong: #b9b3a6;
+      --corten: #c6491f; --corten-bright: #e1652e; --steel: #556069; --whatsapp: #1fa855;
+      --white: #ffffff; --shadow: 0 1px 0 rgba(0,0,0,.04), 0 18px 46px -24px rgba(20,20,20,.42);
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --ground: #121417; --panel: #191c20; --panel-2: #23272c; --ink: #f2efe9;
+      --ink-soft: #c7c3bb; --muted: #8a8f97; --line: #2a2f34; --line-strong: #3a4046;
+      --corten: #e1652e; --corten-bright: #f07b3e; --steel: #7e8a93; --whatsapp: #29c063;
+      --white: #f7f3eb; --shadow: 0 1px 0 rgba(0,0,0,.4), 0 22px 52px -26px rgba(0,0,0,.82);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(90deg, color-mix(in srgb, var(--line) 36%, transparent) 1px, transparent 1px) 0 0 / 78px 78px,
+        linear-gradient(0deg, color-mix(in srgb, var(--line) 24%, transparent) 1px, transparent 1px) 0 0 / 78px 78px,
+        radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--corten) 13%, transparent), transparent 30rem),
+        var(--ground);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; }
+    button, input, select, textarea { font: inherit; }
+    .wrap { width: min(var(--maxw), calc(100% - 40px)); margin: 0 auto; }
+    .skip {
+      position: fixed;
+      left: 12px;
+      top: 12px;
+      z-index: 20;
+      transform: translateY(-140%);
+      background: var(--ink);
+      color: var(--ground);
+      padding: 10px 14px;
+      border-radius: var(--radius);
+    }
+    .skip:focus { transform: none; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--ground) 88%, transparent);
+      backdrop-filter: blur(10px);
+    }
+    .topbar-row {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      text-decoration: none;
+      font-weight: 850;
+    }
+    .brand-mark {
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      flex: none;
+      position: relative;
+      background: var(--corten);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.18);
+    }
+    .brand-mark::before,
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      height: 2px;
+      background: rgba(255,255,255,.58);
+    }
+    .brand-mark::before { top: 10px; }
+    .brand-mark::after { top: 17px; }
+    .brand span span {
+      display: block;
+      color: var(--muted);
+      font: 700 11px/1.2 var(--mono);
+      margin-top: 2px;
+    }
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .navlinks a,
+    .theme-btn {
+      border: 1px solid transparent;
+      border-radius: 999px;
+      color: var(--ink-soft);
+      background: transparent;
+      padding: 9px 11px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 750;
+      cursor: pointer;
+    }
+    .navlinks a:hover,
+    .theme-btn:hover {
+      color: var(--ink);
+      border-color: var(--line-strong);
+      background: color-mix(in srgb, var(--panel) 86%, transparent);
+    }
+    .theme-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .hero {
+      padding: 54px 0 36px;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(340px, .82fr);
+      gap: 38px;
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 18px;
+      color: var(--corten);
+      font: 850 12px/1 var(--mono);
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--corten);
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(34px, 6vw, 66px);
+      line-height: .98;
+      text-wrap: balance;
+      max-width: 11ch;
+    }
+    .hero h1 strong { color: var(--corten); }
+    .lede {
+      margin: 0 0 26px;
+      max-width: 58ch;
+      color: var(--ink-soft);
+      font-size: clamp(17px, 2vw, 20px);
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin: 0 0 28px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 46px;
+      border-radius: var(--radius);
+      border: 1px solid transparent;
+      padding: 12px 17px;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: 850;
+      line-height: 1.1;
+    }
+    .btn-primary {
+      background: var(--corten);
+      color: #fff;
+      border-color: var(--corten);
+      box-shadow: 0 14px 26px -18px var(--corten);
+    }
+    .btn-primary:hover { filter: brightness(1.06); }
+    .btn-secondary {
+      background: color-mix(in srgb, var(--panel) 88%, transparent);
+      color: var(--ink);
+      border-color: var(--line-strong);
+    }
+    .btn-secondary:hover { border-color: var(--corten); }
+    .btn-wa {
+      background: var(--whatsapp);
+      color: #fff;
+      border-color: var(--whatsapp);
+      width: 100%;
+    }
+    .btn[disabled] { opacity: .45; cursor: not-allowed; filter: none; }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      max-width: 720px;
+    }
+    .fact {
+      background: color-mix(in srgb, var(--panel) 90%, transparent);
+      padding: 15px;
+      min-height: 82px;
+    }
+    .fact b {
+      display: block;
+      font: 900 20px/1 var(--mono);
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .fact span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .hero-media {
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .hero-media img {
+      width: 100%;
+      aspect-ratio: 800 / 533;
+      object-fit: cover;
+    }
+    .hero-caption {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 14px 15px;
+      border-top: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-size: 13px;
+    }
+    .price-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: color-mix(in srgb, var(--corten) 12%, var(--panel));
+      color: var(--corten);
+      border: 1px solid color-mix(in srgb, var(--corten) 32%, var(--line));
+      font: 900 12px/1 var(--mono);
+      white-space: nowrap;
+    }
+
+    section { padding: 58px 0; }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+    .section-kicker {
+      color: var(--corten);
+      font: 850 12px/1 var(--mono);
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(26px, 4vw, 42px);
+      line-height: 1.05;
+      text-wrap: balance;
+    }
+    .section-copy {
+      margin: 0;
+      color: var(--ink-soft);
+      max-width: 55ch;
+      font-size: 16px;
+    }
+
+    .model-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .model-card {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: color-mix(in srgb, var(--panel) 92%, transparent);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .model-card img {
+      width: 100%;
+      aspect-ratio: 800 / 533;
+      object-fit: cover;
+      background: var(--panel-2);
+    }
+    .model-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 13px;
+      padding: 15px;
+    }
+    .model-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: start;
+    }
+    .code {
+      font: 950 18px/1 var(--mono);
+      color: var(--ink);
+    }
+    .size {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      border-radius: 999px;
+      padding: 7px 9px;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      font: 800 11px/1 var(--mono);
+      white-space: nowrap;
+    }
+    .layout {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+      min-height: 42px;
+    }
+    .model-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font: 750 12px/1.2 var(--mono);
+    }
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 9px;
+      background: color-mix(in srgb, var(--panel-2) 72%, transparent);
+    }
+    .model-actions {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+    .card-price {
+      color: var(--corten);
+      font: 950 13px/1.2 var(--mono);
+    }
+    .quote-btn {
+      border: 1px solid var(--corten);
+      border-radius: var(--radius);
+      background: var(--corten);
+      color: #fff;
+      min-height: 39px;
+      padding: 10px 12px;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .quote-btn:hover { filter: brightness(1.06); }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .step {
+      background: var(--panel);
+      padding: 20px;
+      min-height: 168px;
+    }
+    .step-num {
+      color: var(--corten);
+      font: 950 13px/1 var(--mono);
+    }
+    .step h3 {
+      margin: 18px 0 8px;
+      font-size: 18px;
+      line-height: 1.15;
+    }
+    .step p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    .devis-band {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--steel) 9%, transparent), transparent 44%),
+        color-mix(in srgb, var(--panel-2) 54%, transparent);
+    }
+    .devis-grid {
+      display: grid;
+      grid-template-columns: .82fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .devis-aside {
+      position: sticky;
+      top: 88px;
+    }
+    .devis-aside ul {
+      list-style: none;
+      padding: 0;
+      margin: 22px 0 0;
+      display: grid;
+      gap: 11px;
+    }
+    .devis-aside li {
+      display: flex;
+      gap: 10px;
+      color: var(--ink-soft);
+      font-size: 15px;
+    }
+    .devis-aside li::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin-top: 7px;
+      border-radius: 2px;
+      flex: none;
+      background: var(--corten);
+    }
+    .widget {
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .widget-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      padding: 17px 18px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(0deg, transparent, color-mix(in srgb, var(--corten) 7%, transparent));
+    }
+    .widget-head strong { display: block; font-size: 17px; }
+    .widget-head span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font: 750 11px/1.2 var(--mono);
+    }
+    .widget-step {
+      color: var(--muted);
+      font: 850 12px/1 var(--mono);
+      white-space: nowrap;
+    }
+    .progress {
+      height: 3px;
+      background: var(--panel-2);
+    }
+    .progress i {
+      display: block;
+      width: 25%;
+      height: 100%;
+      background: var(--corten);
+      transition: width .25s ease;
+    }
+    .widget-body { padding: 20px 18px 18px; }
+    .qwrap { display: none; }
+    .qwrap.active { display: block; animation: fade .22s ease both; }
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: none; }
+    }
+    .qtitle {
+      margin: 0 0 5px;
+      color: var(--ink);
+      font-size: 17px;
+      font-weight: 850;
+      line-height: 1.2;
+    }
+    .qhint {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .opts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .opt {
+      position: relative;
+      text-align: left;
+      min-height: 58px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel-2);
+      color: var(--ink);
+      padding: 12px 13px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .opt small {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .opt:hover { border-color: var(--corten); }
+    .opt[aria-pressed="true"] {
+      border-color: var(--corten);
+      background: color-mix(in srgb, var(--corten) 12%, var(--panel));
+      box-shadow: inset 0 0 0 1px var(--corten);
+    }
+    .opt[aria-pressed="true"]::after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      right: 12px;
+      width: 7px;
+      height: 12px;
+      border: solid var(--corten);
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    .field {
+      width: 100%;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: var(--panel-2);
+      color: var(--ink);
+      padding: 12px 13px;
+      outline: none;
+      font-size: 15px;
+    }
+    .field::placeholder { color: color-mix(in srgb, var(--muted) 78%, transparent); }
+    textarea.field { min-height: 86px; resize: vertical; }
+    .field:focus,
+    .opt:focus-visible,
+    .btn:focus-visible,
+    .quote-btn:focus-visible,
+    .theme-btn:focus-visible {
+      outline: 2px solid var(--corten);
+      outline-offset: 2px;
+    }
+    .two-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .form-grid {
+      display: grid;
+      gap: 10px;
+    }
+    .widget-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .result {
+      display: none;
+    }
+    .result.show {
+      display: block;
+      animation: fade .22s ease both;
+    }
+    .brief {
+      margin: 8px 0 16px;
+      border: 1px dashed var(--line-strong);
+      border-radius: var(--radius);
+      background: var(--panel-2);
+      padding: 14px;
+      color: var(--ink-soft);
+      font: 700 12.5px/1.6 var(--mono);
+      overflow-wrap: anywhere;
+    }
+    .brief .k { color: var(--muted); }
+    .brief .v { color: var(--ink); font-weight: 900; }
+    .mini-note {
+      color: var(--muted);
+      font-size: 12px;
+      margin: 12px 0 0;
+    }
+    .restart {
+      display: inline-flex;
+      margin-top: 12px;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 0;
+      cursor: pointer;
+      text-decoration: underline;
+      font: 800 12px/1 var(--mono);
+    }
+
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+    .info-card {
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: color-mix(in srgb, var(--panel) 92%, transparent);
+      padding: 20px;
+      min-height: 194px;
+      box-shadow: var(--shadow);
+    }
+    .info-card h3 {
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+    .info-card p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0 0;
+      display: grid;
+      gap: 9px;
+      color: var(--ink-soft);
+      font-weight: 700;
+    }
+    .contact-list a {
+      color: var(--corten);
+      text-decoration: none;
+    }
+
+    .rgpd {
+      padding: 0 0 40px;
+    }
+    .rgpd-box {
+      border-left: 3px solid var(--steel);
+      background: color-mix(in srgb, var(--steel) 9%, transparent);
+      color: var(--muted);
+      padding: 12px 14px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: 12.5px;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0 42px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    footer b { color: var(--ink); }
+    .made { font: 850 11px/1.4 var(--mono); text-transform: uppercase; }
+    .made b { color: var(--corten); }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .devis-grid {
+        grid-template-columns: 1fr;
+      }
+      .devis-aside { position: static; }
+      .model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .steps,
+      .delivery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      h1 { max-width: 14ch; }
+    }
+
+    @media (max-width: 700px) {
+      .wrap { width: min(100% - 28px, var(--maxw)); }
+      .topbar-row { min-height: 58px; }
+      .navlinks a { display: none; }
+      .hero { padding: 34px 0 28px; }
+      .facts,
+      .model-grid,
+      .steps,
+      .delivery-grid,
+      .two-fields {
+        grid-template-columns: 1fr;
+      }
+      .section-head {
+        display: block;
+      }
+      .section-copy { margin-top: 12px; }
+      .opts { grid-template-columns: 1fr; }
+      .hero-caption { grid-template-columns: 1fr; }
+      section { padding: 42px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#devis">Aller au devis</a>
+
+  <div class="topbar">
+    <div class="wrap topbar-row">
+      <a class="brand" href="#top" aria-label="Noce Habitat">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Noce Habitat<span>Bungalows & modules container</span></span>
+      </a>
+      <nav class="navlinks" aria-label="Navigation principale">
+        <a href="#modeles">Modèles</a>
+        <a href="#fonctionnement">Méthode</a>
+        <a href="#livraison">Livraison</a>
+        <a href="#devis">Devis</a>
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Changer le thème"><span id="themeIcon">◐</span> Thème</button>
+      </nav>
+    </div>
+  </div>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Modules neufs 21 m²</p>
+          <h1>Votre container prêt à vendre, louer ou exploiter <strong>rapidement.</strong></h1>
+          <p class="lede">15 configurations compactes en 7,00 × 2,90 × 2,50 m : bureau de chantier, studio, showroom, snack, stockage ou logement d’appoint. Devis qualifié en quelques questions, réponse rapide sur WhatsApp.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#devis">Obtenir mon devis</a>
+            <a class="btn btn-secondary" href="#modeles">Voir les 15 modèles</a>
+          </div>
+          <div class="facts" aria-label="Points clés">
+            <div class="fact"><b>15</b><span>agencements disponibles</span></div>
+            <div class="fact"><b>21 m²</b><span>format unique et lisible</span></div>
+            <div class="fact"><b>24 h</b><span>retour devis ciblé</span></div>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img src="assets/NC014.png" width="799" height="533" alt="Module container Noce Habitat NC014 avec deux pièces, salle d’eau et coin cuisine">
+          <figcaption class="hero-caption">
+            <span>Exemple NC014 : configuration complète avec pièces séparées, salle d’eau et coin cuisine.</span>
+            <span class="price-pill">À partir de 3 750 € HT</span>
+          </figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <section id="modeles">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Catalogue</p>
+            <h2>15 modèles, un format simple à comparer.</h2>
+          </div>
+          <p class="section-copy">Tous les modules partagent la même enveloppe : 7,00 × 2,90 × 2,50 m, environ 21 m². La différence se joue dans l’agencement intérieur : pièces, sanitaires, douche, lavabo ou coin cuisine.</p>
+        </div>
+
+        <div class="model-grid" aria-label="Modèles Noce Habitat">
+          <article class="model-card">
+            <img src="assets/NC001.jpg" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC001 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC001</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Grand volume ouvert pour bureau, atelier, stockage propre ou showroom minimal.</p>
+              <div class="model-meta"><span class="tag">1 porte extérieure</span><span class="tag">2 fenêtres</span><span class="tag">sans sanitaire</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC001">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC002.jpg" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC002 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC002</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Une pièce principale avec salle d’eau intégrée pour studio, base vie ou bureau autonome.</p>
+              <div class="model-meta"><span class="tag">1 pièce</span><span class="tag">WC + douche + lavabo</span><span class="tag">2 fenêtres</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC002">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC003.jpg" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC003 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC003</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Espace ouvert avec coin évier, adapté à un snack, un point d’accueil ou un bureau équipé.</p>
+              <div class="model-meta"><span class="tag">volume ouvert</span><span class="tag">évier</span><span class="tag">2 fenêtres</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC003">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC004.jpg" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC004 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC004</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Deux espaces indépendants avec double accès, pratique pour location, bureau double ou vestiaire.</p>
+              <div class="model-meta"><span class="tag">2 pièces</span><span class="tag">2 portes extérieures</span><span class="tag">sans sanitaire</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC004">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC005.jpg" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC005 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC005</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Deux pièces séparées avec circulation intérieure, pour bureau fermé et zone d’accueil.</p>
+              <div class="model-meta"><span class="tag">2 pièces</span><span class="tag">1 porte intérieure</span><span class="tag">2 fenêtres</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC005">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC006.jpg" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC006 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC006</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Grand espace exploitable avec point lavabo, pensé pour activité légère ou accueil client.</p>
+              <div class="model-meta"><span class="tag">grand volume</span><span class="tag">lavabo</span><span class="tag">2 accès</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC006">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC007.jpg" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC007 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC007</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Une pièce avec coin sanitaire compact : WC, lavabo et évier pour usage quotidien.</p>
+              <div class="model-meta"><span class="tag">1 pièce</span><span class="tag">WC + lavabo</span><span class="tag">évier</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC007">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC008.jpg" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC008 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC008</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Configuration complète avec salle d’eau et évier, adaptée au studio ou à la base vie.</p>
+              <div class="model-meta"><span class="tag">WC + douche</span><span class="tag">lavabo + évier</span><span class="tag">2 fenêtres</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC008">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC009.jpg" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC009 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC009</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Deux pièces avec zone évier centrale, utile pour chambre double, atelier ou location courte.</p>
+              <div class="model-meta"><span class="tag">2 pièces</span><span class="tag">3 portes</span><span class="tag">évier</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC009">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC010.png" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC010 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC010</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Deux pièces type chambres avec WC central, pour hébergement ou usage personnel séparé.</p>
+              <div class="model-meta"><span class="tag">2 pièces</span><span class="tag">WC + lavabo</span><span class="tag">4 portes</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC010">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC011.png" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC011 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC011</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Deux pièces et salle d’eau centrale, avec accès différenciés pour occupation flexible.</p>
+              <div class="model-meta"><span class="tag">2 pièces</span><span class="tag">salle d’eau centrale</span><span class="tag">2 accès extérieurs</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC011">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC012.png" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC012 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC012</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Deux pièces avec salle d’eau complète, pour studio compartimenté ou logement d’appoint.</p>
+              <div class="model-meta"><span class="tag">2 pièces</span><span class="tag">WC + douche + lavabo</span><span class="tag">3 portes</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC012">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC013.png" width="800" height="533" loading="lazy" alt="Plan et rendu du modèle NC013 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC013</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Deux pièces et salle d’eau avec douche, pour aménagement résidentiel compact.</p>
+              <div class="model-meta"><span class="tag">2 pièces</span><span class="tag">WC + lavabo + douche</span><span class="tag">4 portes</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC013">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC014.png" width="799" height="533" loading="lazy" alt="Plan et rendu du modèle NC014 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC014</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Deux pièces, salle d’eau et coin cuisine : le modèle le plus polyvalent pour studio équipé.</p>
+              <div class="model-meta"><span class="tag">2 pièces</span><span class="tag">douche + WC</span><span class="tag">coin cuisine</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC014">Devis</button></div>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <img src="assets/NC015.png" width="799" height="533" loading="lazy" alt="Plan et rendu du modèle NC015 Noce Habitat">
+            <div class="model-body">
+              <div class="model-top"><span class="code">NC015</span><span class="size">7,00 × 2,90 × 2,50 m</span></div>
+              <p class="layout">Une pièce avec salle d’eau complète, simple à chiffrer pour logement, bureau ou base vie.</p>
+              <div class="model-meta"><span class="tag">1 pièce</span><span class="tag">WC + lavabo + douche</span><span class="tag">3 portes</span></div>
+              <div class="model-actions"><span class="card-price">À partir de 3 750 € HT</span><button class="quote-btn" type="button" data-quote-model="NC015">Devis</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="fonctionnement">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Comment ça marche</p>
+            <h2>Un parcours clair, du besoin au module livré.</h2>
+          </div>
+          <p class="section-copy">Le formulaire remplace les échanges flous : Noce Habitat reçoit directement l’usage, le lieu, le délai et le modèle visé.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-num">01</span><h3>Choisissez un modèle</h3><p>Comparez les 15 agencements et lancez un devis depuis la carte qui correspond à votre projet.</p></article>
+          <article class="step"><span class="step-num">02</span><h3>Répondez à 4 questions</h3><p>Usage, lieu de livraison, délai, budget : assez pour préparer une première proposition utile.</p></article>
+          <article class="step"><span class="step-num">03</span><h3>Recevez un retour</h3><p>Votre demande part sur WhatsApp avec un message déjà structuré pour éviter les oublis.</p></article>
+          <article class="step"><span class="step-num">04</span><h3>Validez la livraison</h3><p>Noce Habitat confirme le prix, les options, les délais et l’organisation de la livraison.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="devis-band" id="devis">
+      <div class="wrap devis-grid">
+        <aside class="devis-aside">
+          <p class="section-kicker">Devis rapide</p>
+          <h2>Envoyez une demande exploitable en moins de deux minutes.</h2>
+          <ul>
+            <li>WhatsApp Noce Habitat : 07 53 81 31 15.</li>
+            <li>Le modèle sélectionné est repris automatiquement dans le message.</li>
+            <li>Le prix de départ affiché est : À partir de 3 750 € HT.</li>
+            <li>Aucun paiement en ligne : la demande sert uniquement à préparer un devis.</li>
+          </ul>
+        </aside>
+
+        <section class="widget" id="noce-widget" aria-label="Widget de devis Noce Habitat">
+          <div class="widget-head">
+            <div>
+              <strong>Recevez votre devis Noce Habitat</strong>
+              <span id="stepLabel">Étape 1 / 4</span>
+            </div>
+            <span class="widget-step">4Q</span>
+          </div>
+          <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+          <div class="widget-body">
+            <div class="qwrap active" data-step="1">
+              <p class="qtitle">Quel modèle ou usage vous intéresse ?</p>
+              <p class="qhint">Sélectionnez un modèle précis ou l’usage principal du module.</p>
+              <div class="form-grid">
+                <select class="field" id="model">
+                  <option value="">Modèle à définir</option>
+                  <option value="NC001">NC001 · volume ouvert</option>
+                  <option value="NC002">NC002 · pièce + salle d’eau</option>
+                  <option value="NC003">NC003 · volume ouvert + évier</option>
+                  <option value="NC004">NC004 · deux espaces indépendants</option>
+                  <option value="NC005">NC005 · deux pièces séparées</option>
+                  <option value="NC006">NC006 · grand volume + lavabo</option>
+                  <option value="NC007">NC007 · pièce + sanitaire compact</option>
+                  <option value="NC008">NC008 · salle d’eau complète + évier</option>
+                  <option value="NC009">NC009 · deux pièces + évier central</option>
+                  <option value="NC010">NC010 · deux pièces + WC central</option>
+                  <option value="NC011">NC011 · deux pièces + salle d’eau centrale</option>
+                  <option value="NC012">NC012 · deux pièces + salle d’eau complète</option>
+                  <option value="NC013">NC013 · deux pièces + douche</option>
+                  <option value="NC014">NC014 · deux pièces + salle d’eau + cuisine</option>
+                  <option value="NC015">NC015 · une pièce + salle d’eau complète</option>
+                </select>
+                <div class="opts" data-single="usage">
+                  <button class="opt" type="button" data-val="Bureau / chantier">Bureau / chantier<small>base vie, algeco</small></button>
+                  <button class="opt" type="button" data-val="Logement / studio">Logement / studio<small>habitation, locatif</small></button>
+                  <button class="opt" type="button" data-val="Commerce / snack">Commerce / snack<small>point de vente</small></button>
+                  <button class="opt" type="button" data-val="Stockage / atelier">Stockage / atelier<small>dépôt, activité</small></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="qwrap" data-step="2">
+              <p class="qtitle">Où livrer le module ?</p>
+              <p class="qhint">Ville ou département, pour estimer la livraison en France.</p>
+              <input class="field" id="ville" type="text" inputmode="text" placeholder="Ex : Creil, Oise (60)" autocomplete="address-level2">
+            </div>
+
+            <div class="qwrap" data-step="3">
+              <p class="qtitle">Pour quand ?</p>
+              <p class="qhint">Votre délai idéal aide à prioriser la réponse.</p>
+              <div class="opts" data-single="delai">
+                <button class="opt" type="button" data-val="Urgent (moins d’un mois)">Urgent<small>moins d’un mois</small></button>
+                <button class="opt" type="button" data-val="1 à 3 mois">1 à 3 mois<small>projet en cours</small></button>
+                <button class="opt" type="button" data-val="Plus tard / je me renseigne">Je me renseigne<small>pas pressé</small></button>
+                <button class="opt" type="button" data-val="Date non définie">Pas encore décidé<small>à voir ensemble</small></button>
+              </div>
+            </div>
+
+            <div class="qwrap" data-step="4">
+              <p class="qtitle">Vos coordonnées et détails</p>
+              <p class="qhint">Budget optionnel, mais utile pour viser juste du premier coup.</p>
+              <div class="form-grid">
+                <div class="opts" data-single="budget">
+                  <button class="opt" type="button" data-val="moins de 5 000 € HT">&lt; 5 000 € HT</button>
+                  <button class="opt" type="button" data-val="5 000 - 10 000 € HT">5 000 - 10 000 € HT</button>
+                  <button class="opt" type="button" data-val="plus de 10 000 € HT">&gt; 10 000 € HT</button>
+                  <button class="opt" type="button" data-val="budget à définir">Je ne sais pas</button>
+                </div>
+                <div class="two-fields">
+                  <input class="field" id="prenom" type="text" placeholder="Prénom" autocomplete="given-name">
+                  <input class="field" id="phone" type="tel" placeholder="Téléphone" autocomplete="tel">
+                </div>
+                <textarea class="field" id="note" placeholder="Une précision ? Options, sanitaires, électricité, accès camion, date souhaitée..."></textarea>
+              </div>
+            </div>
+
+            <div class="result" id="result">
+              <p class="qtitle">Votre demande est prête.</p>
+              <p class="qhint">Le bouton ouvre WhatsApp avec le récapitulatif déjà écrit.</p>
+              <div class="brief" id="brief"></div>
+              <a class="btn btn-wa" id="waBtn" href="#" target="_blank" rel="noopener">Envoyer sur WhatsApp</a>
+              <button class="restart" id="restart" type="button">Recommencer</button>
+              <p class="mini-note">Pas de WhatsApp ? Appelez le <a href="tel:+33753813115">07 53 81 31 15</a>.</p>
+            </div>
+
+            <div class="widget-nav" id="nav">
+              <button class="btn btn-secondary" id="prev" type="button" style="visibility:hidden">Retour</button>
+              <button class="btn btn-primary" id="next" type="button" disabled>Continuer</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="livraison">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Livraison & contact</p>
+            <h2>Livraison partout en France, départ Nogent-sur-Oise.</h2>
+          </div>
+          <p class="section-copy">Noce Habitat accompagne le choix du modèle, les options, la livraison et la mise en place selon les contraintes du terrain.</p>
+        </div>
+        <div class="delivery-grid">
+          <article class="info-card">
+            <h3>France entière</h3>
+            <p>Demande de devis avec ville ou département pour préparer le coût de transport et les contraintes d’accès.</p>
+          </article>
+          <article class="info-card">
+            <h3>Nogent-sur-Oise</h3>
+            <p>Adresse de contact : 26 rue du Clos Barrois, 60180 Nogent-sur-Oise.</p>
+            <ul class="contact-list">
+              <li><a href="tel:+33753813115">07 53 81 31 15</a></li>
+              <li><a href="mailto:info@nocehabitat.fr">info@nocehabitat.fr</a></li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Projet professionnel</h3>
+            <p>Bureau de chantier, commerce, hébergement, stockage, showroom : le bon agencement dépend de l’usage et des raccordements prévus.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rgpd" aria-label="Note RGPD">
+      <div class="wrap">
+        <div class="rgpd-box">
+          RGPD : les informations saisies dans le formulaire servent uniquement à préparer votre demande de devis Noce Habitat et à vous recontacter. Aucun paiement n’est collecté sur cette page.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div><b>Noce Habitat</b> · modules container 21 m² · livraison France</div>
+      <div class="made">par <b>Fenix Studio</b></div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var WA_NUMBER = "33753813115";
+      var PRICE = "À partir de 3 750 € HT";
+      var root = document.documentElement;
+      var themeBtn = document.getElementById("themeBtn");
+      var themeIcon = document.getElementById("themeIcon");
+
+      function preferredTheme() {
+        var saved = localStorage.getItem("noce-theme");
+        if (saved === "light" || saved === "dark") return saved;
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+
+      function setTheme(value) {
+        root.setAttribute("data-theme", value);
+        themeIcon.textContent = value === "dark" ? "◑" : "◐";
+        localStorage.setItem("noce-theme", value);
+      }
+
+      setTheme(preferredTheme());
+      themeBtn.addEventListener("click", function () {
+        setTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      });
+
+      var answers = {
+        model: "",
+        usage: "",
+        ville: "",
+        delai: "",
+        budget: "",
+        prenom: "",
+        phone: "",
+        note: ""
+      };
+      var step = 1;
+      var TOTAL = 4;
+      var wraps = Array.prototype.slice.call(document.querySelectorAll(".qwrap"));
+      var bar = document.getElementById("bar");
+      var stepLabel = document.getElementById("stepLabel");
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var nav = document.getElementById("nav");
+      var result = document.getElementById("result");
+      var model = document.getElementById("model");
+      var ville = document.getElementById("ville");
+      var prenom = document.getElementById("prenom");
+      var phone = document.getElementById("phone");
+      var note = document.getElementById("note");
+
+      function esc(text) {
+        return String(text || "").replace(/[<>&"]/g, function (char) {
+          return { "<": "&lt;", ">": "&gt;", "&": "&amp;", "\"": "&quot;" }[char];
+        });
+      }
+
+      function stepValid(current) {
+        if (current === 1) return !!answers.model || !!answers.usage;
+        if (current === 2) return answers.ville.length > 1;
+        if (current === 3) return !!answers.delai;
+        return true;
+      }
+
+      function refreshNext() {
+        next.disabled = !stepValid(step);
+      }
+
+      function render() {
+        wraps.forEach(function (wrap) {
+          wrap.classList.toggle("active", Number(wrap.getAttribute("data-step")) === step);
+        });
+        bar.style.width = (step / TOTAL * 100) + "%";
+        stepLabel.textContent = "Étape " + step + " / " + TOTAL;
+        prev.style.visibility = step === 1 ? "hidden" : "visible";
+        next.textContent = step === TOTAL ? "Voir ma demande" : "Continuer";
+        refreshNext();
+        if (step === 2) setTimeout(function () { ville.focus(); }, 40);
+      }
+
+      function line(key, value) {
+        if (!value) return "";
+        return "<div><span class=\"k\">" + key + " :</span> <span class=\"v\">" + esc(value) + "</span></div>";
+      }
+
+      function finish() {
+        var budget = answers.budget || "budget à définir";
+        var selectedModel = answers.model || "à définir";
+        document.getElementById("brief").innerHTML =
+          line("Modèle", selectedModel) +
+          line("Usage", answers.usage || "à préciser") +
+          line("Prix de départ", PRICE) +
+          line("Livraison", answers.ville) +
+          line("Délai", answers.delai) +
+          line("Budget", budget) +
+          line("Prénom", answers.prenom) +
+          line("Téléphone", answers.phone) +
+          line("Précision", answers.note);
+
+        var greeting = answers.prenom ? ("Bonjour, je suis " + answers.prenom + ". ") : "Bonjour, ";
+        var message =
+          greeting + "je souhaite un devis Noce Habitat.\n\n" +
+          "- Modèle : " + selectedModel + "\n" +
+          "- Usage : " + (answers.usage || "à préciser") + "\n" +
+          "- Prix de départ vu sur le site : " + PRICE + "\n" +
+          "- Livraison : " + answers.ville + "\n" +
+          "- Délai : " + answers.delai + "\n" +
+          "- Budget : " + budget +
+          (answers.phone ? ("\n- Téléphone : " + answers.phone) : "") +
+          (answers.note ? ("\n- Précision : " + answers.note) : "") +
+          "\n\nMerci de me proposer le modèle adapté.";
+
+        document.getElementById("waBtn").href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(message);
+        wraps.forEach(function (wrap) { wrap.classList.remove("active"); });
+        nav.style.display = "none";
+        result.classList.add("show");
+        bar.style.width = "100%";
+        stepLabel.textContent = "Demande prête";
+      }
+
+      document.querySelectorAll(".opts[data-single]").forEach(function (group) {
+        var key = group.getAttribute("data-single");
+        group.querySelectorAll(".opt").forEach(function (btn) {
+          btn.setAttribute("aria-pressed", "false");
+          btn.addEventListener("click", function () {
+            group.querySelectorAll(".opt").forEach(function (item) {
+              item.setAttribute("aria-pressed", "false");
+            });
+            btn.setAttribute("aria-pressed", "true");
+            answers[key] = btn.getAttribute("data-val") || "";
+            refreshNext();
+          });
+        });
+      });
+
+      model.addEventListener("change", function () {
+        answers.model = model.value;
+        refreshNext();
+      });
+      ville.addEventListener("input", function () {
+        answers.ville = ville.value.trim();
+        refreshNext();
+      });
+      prenom.addEventListener("input", function () {
+        answers.prenom = prenom.value.trim();
+        refreshNext();
+      });
+      phone.addEventListener("input", function () {
+        answers.phone = phone.value.trim();
+        refreshNext();
+      });
+      note.addEventListener("input", function () {
+        answers.note = note.value.trim();
+        refreshNext();
+      });
+
+      next.addEventListener("click", function () {
+        if (!stepValid(step)) return;
+        if (step < TOTAL) {
+          step += 1;
+          render();
+        } else {
+          finish();
+        }
+      });
+      prev.addEventListener("click", function () {
+        if (step > 1) {
+          step -= 1;
+          render();
+        }
+      });
+
+      document.getElementById("restart").addEventListener("click", function () {
+        answers = { model: "", usage: "", ville: "", delai: "", budget: "", prenom: "", phone: "", note: "" };
+        model.value = "";
+        ville.value = "";
+        prenom.value = "";
+        phone.value = "";
+        note.value = "";
+        document.querySelectorAll(".opt").forEach(function (btn) { btn.setAttribute("aria-pressed", "false"); });
+        result.classList.remove("show");
+        nav.style.display = "flex";
+        step = 1;
+        render();
+      });
+
+      document.querySelectorAll("[data-quote-model]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var value = btn.getAttribute("data-quote-model") || "";
+          answers.model = value;
+          model.value = value;
+          step = 1;
+          result.classList.remove("show");
+          nav.style.display = "flex";
+          render();
+          document.getElementById("devis").scrollIntoView({ behavior: "smooth", block: "start" });
+          setTimeout(function () { model.focus(); }, 450);
+        });
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
