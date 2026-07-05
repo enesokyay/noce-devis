@@ -329,3 +329,5 @@
     if (launcher.getAttribute("aria-expanded") !== "true") teaser.hidden = false;
   }, 2500);
 })();
+
+/* v2 1f87a57 */
